@@ -46,6 +46,6 @@ Route::prefix('superAdmin/admin/dashboard')->middleware('auth:admin')->name('adm
 
 // Route::get('', [LoginController::class ,'getLogin']);
 Route::group(['prefix' => 'admin' ,'middleware' => 'guest:admin'], function () {
-    Route::get('login', [LoginController::class ,'getLogin'])->name('admin.login');
+    Route::get('login', [LoginController::class ,'getLogin'])->name('admin.getLogin');
     Route::post('login', [LoginController::class ,'login'])->name('admin.login');
 });
