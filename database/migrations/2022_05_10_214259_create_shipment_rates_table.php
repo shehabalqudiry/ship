@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('city_from');
             $table->unsignedBigInteger('city_to');
+            $table->unsignedBigInteger('user_id');
             $table->double('rate');
             $table->timestamps();
 

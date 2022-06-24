@@ -13,17 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('team_members', function (Blueprint $table) {
+        Schema::create('companies', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('phone')->unique();
             $table->unsignedBigInteger('user_id');
-            $table->string('account_number')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('role');
-            $table->rememberToken();
+            $table->string('AccountNumber');
+            $table->string('UserName');
+            $table->string('Password');
+            $table->string('AccountPin');
+            $table->string('AccountEntity')->default('AMM');
+            $table->string('AccountCountryCode')->default('JO');
+            $table->string('Version')->default('v1');
             $table->timestamps();
         });
     }
@@ -35,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('team_members');
+        Schema::dropIfExists('companies');
     }
 };
