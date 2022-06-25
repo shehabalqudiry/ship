@@ -20,15 +20,15 @@
     <!-- Vendor CSS Files -->
     {{--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" />  --}}
-    <link href="{{ url('assets') }}/vendor/bootstrap/css/bootstrap{{ app()->getLocale() === 'ar' ? '.rtl' : '' }}.css" rel="stylesheet">
-    <link href="{{ url('assets') }}/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="{{ url('assets') }}/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="{{ url('assets') }}/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-    <link href="{{ url('assets') }}/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="https://shipybuy.com/assets/vendor/bootstrap/css/bootstrap{{ app()->getLocale() === 'ar' ? '.rtl' : '' }}.css" rel="stylesheet">
+    <link href="{{ secure_asset('assets') }}/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="{{ secure_asset('assets') }}/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="{{ secure_asset('assets') }}/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="{{ secure_asset('assets') }}/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
 
-    <link href="{{ url('assets') }}/css/style.css" rel="stylesheet" />
+    <link href="{{ secure_asset('assets') }}/css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
@@ -118,16 +118,16 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="{{ url('assets') }}/vendor/purecounter/purecounter.js"></script>
-    <script src="{{ url('assets') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ url('assets') }}/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="{{ url('assets') }}/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="{{ url('assets') }}/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="{{ url('assets') }}/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="{{ url('assets') }}/vendor/php-email-form/validate.js"></script>
+    <script src="{{ secure_asset('assets') }}/vendor/purecounter/purecounter.js"></script>
+    <script src="{{ secure_asset('assets') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ secure_asset('assets') }}/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="{{ secure_asset('assets') }}/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="{{ secure_asset('assets') }}/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ secure_asset('assets') }}/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="{{ secure_asset('assets') }}/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{ url('assets') }}/js/main.js"></script>
+    <script src="{{ secure_asset('assets') }}/js/main.js"></script>
 </body>
 
 </html>
