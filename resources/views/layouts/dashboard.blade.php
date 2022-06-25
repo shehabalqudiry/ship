@@ -50,7 +50,7 @@
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="logo mx-4">
                 <h1><a href="/">Logo</a></h1>
-                {{--  <a href="/"><img src="{{ secure_asset('assets') }}/img/logo.png" alt="" class="img-fluid"></a>  --}}
+                 <a href="/"><img src="{{ secure_asset(App\Models\Setting::first()->website_logo ?? 'assets/images/logo/logo.png') }}" alt="" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar justify-content-between">
