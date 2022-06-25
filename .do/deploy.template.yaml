@@ -4,7 +4,7 @@ spec:
   - environment_slug: php
     git:
       branch: master
-      repo_clone_url: https://github.com/shehabalqudiry/shipping.git
+      repo_clone_url: https://github.com/shehabalqudiry/ship.git
     envs:
     - key: APP_KEY
       value: "base64:VSaZMr2LQbGnAOKvGpq2tBLCXEiQCIr8hAetXaFD9Cc="

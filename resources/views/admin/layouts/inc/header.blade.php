@@ -1,7 +1,7 @@
 <div class="page-header">
     <div class="header-wrapper row m-0">
         <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper"><a href=""><img class="img-fluid" src="{{asset(App\Models\Setting::first()->website_logo ?? 'assets/images/logo/logo.png')}}"
+            <div class="logo-wrapper"><a href=""><img class="img-fluid" src="{{secure_asset(App\Models\Setting::first()->website_logo ?? 'assets/images/logo/logo.png')}}"
                         alt=""></a></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
             </div>
