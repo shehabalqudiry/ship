@@ -99,7 +99,7 @@
  <div class="container d-md-flex py-4">
             <div class="me-md-auto text-center text-md-start">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Lumia</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>MetaForTech</span></strong>. All Rights Reserved
                 </div>
             </div>
             {{--  <div class="social-links text-center text-md-right pt-3 pt-md-0">
