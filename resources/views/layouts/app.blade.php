@@ -20,7 +20,7 @@
     <!-- Vendor CSS Files -->
     {{--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous" />  --}}
-    <link href="https://shipybuy.com/assets/vendor/bootstrap/css/bootstrap{{ app()->getLocale() === 'ar' ? '.rtl' : '' }}.css" rel="stylesheet">
+    <link href="{{ secure_asset('assets') }}/vendor/bootstrap/css/bootstrap{{ app()->getLocale() === 'ar' ? '.rtl' : '' }}.css" rel="stylesheet">
     <link href="{{ secure_asset('assets') }}/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link href="{{ secure_asset('assets') }}/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
     <link href="{{ secure_asset('assets') }}/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
