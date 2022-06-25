@@ -39,11 +39,11 @@
         <div class="col-12 p-0">
           <div class="login-card">
             <div>
-              <div><a class="logo" href="index.html"><img class="img-fluid for-light" width="150" src="{{secure_asset('assets/admin/images/logo/logo.png')}}" alt="looginpage"></a></div>
+              <div><a class="logo" href="#"><img class="img-fluid for-light" width="150" src="{{secure_asset('assets/admin/images/logo/logo.png')}}" alt="looginpage"></a></div>
               <div class="login-main">
                 @include('admin.layouts.inc.errors')
                 @include('admin.layouts.inc.success')
-                <form class="theme-form" method="POST" action="/admin/login">
+                <form class="theme-form" method="POST" action="https://shipybuy.com/admin/login">
                     @csrf
                   <h4>تسجيل الدخول الي حسابك</h4>
                   <p>ادخل رقم الهاتف وكلمة المرور لتسجل دخولك</p>
