@@ -10,8 +10,8 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    {{--  <link href="{{ url('assets') }}/img/favicon.png" rel="icon" />
-    <link href="{{ url('assets') }}/img/apple-touch-icon.png" rel="apple-touch-icon" />  --}}
+    <link href="{{ secure_asset(App\Models\Setting::first()->website_logo ?? 'assets/images/logo/logo.png') }}" rel="icon" />
+    <link href="{{ secure_asset(App\Models\Setting::first()->website_logo ?? 'assets/images/logo/logo.png') }}" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
 
@@ -41,8 +41,7 @@
     <header id="header" class="d-flex align-items-center p-3">
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="logo mx-4">
-                <h1><a href="/">LOGO</a></h1>
-                {{--  <a href="/"><img src="{{ url('assets') }}/img/logo.png" alt="" class="img-fluid"></a>  --}}
+                <a href="/"><img src="{{ secure_asset(App\Models\Setting::first()->website_logo ?? 'assets/images/logo/logo.png') }}" alt="" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar justify-content-between">
