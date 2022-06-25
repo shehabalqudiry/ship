@@ -36,7 +36,7 @@ class LoginController extends Controller
         $remember_me)) {
             return redirect()->route('admin.dashboard');
         }
-        return redirect()->route('admin.login')->with(['error' => 'هناك خطا بالبيانات']);
+        return redirect()->route('admin.getLogin')->with('error', 'هناك خطا بالبيانات');
     }
 
 }
