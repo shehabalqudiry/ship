@@ -17,7 +17,11 @@
                             {{ $shipment->where('status', 0)->count() }}
                         </h4>
                         <h4 style="font-weight: 700;">
-                            {{ number_format(($shipment->where('status', 0)->count() * 100) / $shipment->count() ?? 0, 2) }} %
+                            @if ($shipment->count() !== 0)
+                            {{ number_format(($shipment->where('status', 0)->count() * 100) / $shipment->count(), 2) }} %
+                            @else
+                            0 %
+                            @endif
                         </h4>
                     </div>
                 </div>
@@ -33,7 +37,11 @@
                             {{ $shipment->where('status', 1)->count() }}
                         </h4>
                         <h4 style="font-weight: 700;">
-                            {{ number_format(($shipment->where('status', 1)->count() * 100) / $shipment->count() ?? 0, 2) }} %
+                            @if ($shipment->count() !== 0)
+                            {{ number_format(($shipment->where('status', 1)->count() * 100) / $shipment->count(), 2) }} %
+                            @else
+                            0 %
+                            @endif
                         </h4>
                     </div>
                 </div>
@@ -49,7 +57,11 @@
                             {{ $shipment->whereIn('status', [2, 4])->count() }}
                         </h4>
                         <h4 style="font-weight: 700;">
-                            {{ number_format(($shipment->whereIn('status', [2, 4])->count() * 100) / $shipment->count() ?? 0, 2) }} %
+                            @if ($shipment->count() !== 0)
+                            {{ number_format(($shipment->whereIn('status', [2, 4])->count() * 100) / $shipment->count(), 2) }} %
+                            @else
+                            0 %
+                            @endif
                         </h4>
                     </div>
                 </div>
@@ -65,7 +77,11 @@
                             {{ $shipment->where('status', 3)->count() }}
                         </h4>
                         <h4 style="font-weight: 700;">
-                            {{ number_format(($shipment->where('status', 3)->count() * 100) / $shipment->count() ?? 0, 2) }} %
+                            @if ($shipment->count() !== 0)
+                            {{ number_format(($shipment->where('status', 3)->count() * 100) / $shipment->count(), 2) }} %
+                            @else
+                            0 %
+                            @endif
                         </h4>
                     </div>
                 </div>
