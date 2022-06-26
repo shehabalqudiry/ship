@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\ShipmentRate;
+use App\Models\Setting;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        App\Models\Setting::create([
+        Setting::create([
             'website_name'  => 'ShipyBuy',
             'website_logo'  => 'assets/images/logo/logo.png',
             'website_email' => 'info@shipybuy.com',
