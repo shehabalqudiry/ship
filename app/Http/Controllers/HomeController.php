@@ -10,12 +10,12 @@ class HomeController extends Controller
 {
     public function index()
     {
-        Setting::create([
-            'website_name'  => 'ShipyBuy',
-            'website_logo'  => 'assets/images/logo/logo.png',
-            'website_email' => 'info@shipybuy.com',
-            'first_char_account_number' => 'ACC',
-        ]);
+        // Setting::create([
+        //     'website_name'  => 'ShipyBuy',
+        //     'website_logo'  => 'assets/images/logo/logo.png',
+        //     'website_email' => 'info@shipybuy.com',
+        //     'first_char_account_number' => 'ACC',
+        // ]);
         return view('index');
     }
 
