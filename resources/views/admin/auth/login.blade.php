@@ -43,7 +43,7 @@
               <div class="login-main">
                 @include('admin.layouts.inc.errors')
                 @include('admin.layouts.inc.success')
-                <form class="theme-form" method="POST" action="https://shipybuy.com/admin/login">
+                <form class="theme-form" method="POST" action="{{ route('admin.login') }}">
                     @csrf
                   <h4>تسجيل الدخول الي حسابك</h4>
                   <p>ادخل رقم الهاتف وكلمة المرور لتسجل دخولك</p>
