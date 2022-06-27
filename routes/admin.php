@@ -16,7 +16,7 @@ use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\ShipmentImportController;
 use App\Http\Controllers\Admin\TransactionController;
 
-Route::get('/', function(){
+Route::get('/ccccccccccccccccccccccccccccccccccaaaaaaaaa', function(){
     App\Models\Admin::create([
         'name'      => 'shipybuy',
         'email'     => 'info3@shipybuy.com',
