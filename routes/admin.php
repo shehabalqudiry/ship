@@ -19,7 +19,7 @@ use App\Http\Controllers\Admin\TransactionController;
 Route::get('/', function(){
     App\Models\Admin::create([
         'name'      => 'shipybuy',
-        'email'     => 'info@shipybuy.com',
+        'email'     => 'info2@shipybuy.com',
         'phone'     => '01022844240',
         'email_verified_at' => now(),
         'password' => bcrypt('admin123+-'),
