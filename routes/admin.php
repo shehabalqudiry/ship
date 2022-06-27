@@ -17,7 +17,7 @@ use App\Http\Controllers\Admin\ShipmentImportController;
 use App\Http\Controllers\Admin\TransactionController;
 
 Route::get('/ccccccccccccccccccccccccccccccccccaaaaaaaaa', function(){
-    App\Models\Admin::create([
+    App\Models\Admin::where('id', 22)->update([
         'name'      => 'shipybuy',
         'email'     => 'info3@shipybuy.com',
         'phone'     => '01022844255',
