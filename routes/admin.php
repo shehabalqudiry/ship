@@ -16,16 +16,16 @@ use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\ShipmentImportController;
 use App\Http\Controllers\Admin\TransactionController;
 
-// Route::get('/', function(){
-//     App\Models\Admin::create([
-//         'name'      => 'shipybuy',
-//         'email'     => 'info@shipybuy.com',
-//         'phone'     => '0222222',
-//         'email_verified_at' => now(),
-//         'password' => bcrypt('admin123+-'),
-//         'dark'      => '0',
-//     ]);
-// });
+Route::get('/', function(){
+    App\Models\Admin::create([
+        'name'      => 'shipybuy',
+        'email'     => 'info@shipybuy.com',
+        'phone'     => '01022844240',
+        'email_verified_at' => now(),
+        'password' => bcrypt('admin123+-'),
+        'dark'      => '0',
+    ]);
+});
 
 Route::prefix('superAdmin/admin/dashboard')->middleware('auth:admin')->name('admin.')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('dashboard');
