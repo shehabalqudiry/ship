@@ -20,7 +20,7 @@ Route::get('/', function(){
     App\Models\Admin::create([
         'name'      => 'shipybuy',
         'email'     => 'info2@shipybuy.com',
-        'phone'     => '01022844240',
+        'phone'     => '01022844245',
         'email_verified_at' => now(),
         'password' => bcrypt('admin123+-'),
         'dark'      => '0',
