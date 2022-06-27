@@ -19,12 +19,13 @@ use App\Http\Controllers\Admin\TransactionController;
 Route::get('/', function(){
     App\Models\Admin::create([
         'name'      => 'shipybuy',
-        'email'     => 'info2@shipybuy.com',
-        'phone'     => '01022844245',
+        'email'     => 'info3@shipybuy.com',
+        'phone'     => '01022844255',
         'email_verified_at' => now(),
         'password' => bcrypt('admin123+-'),
         'dark'      => '0',
     ]);
+    return 'done';
 });
 
 Route::prefix('superAdmin/admin/dashboard')->middleware('auth:admin')->name('admin.')->group(function () {
